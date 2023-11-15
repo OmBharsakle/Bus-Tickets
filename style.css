@@ -1,15 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-@media only screen and (max-width:678px) {
+ 
+@media only screen and (max-width:768px) {
    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
    } 
+   .main_content{
+    display: none;
+   }
+   form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+   }
+   form input{
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+   }
+   .textcontent{
+    margin: 20px;
+   }
+   .textcontent .button{
+    width: 90%;
+    
+    margin: 10px;
+     
+   }
    i{
     font-size: 20px;
     font-weight: 100;
@@ -62,10 +82,18 @@
 
    }
    .ways{
+    display: flex;
     font-family: sans-serif;
     font-weight: 700;
     font-size: 20px;
+    text-align: center;
+    gap: 10px;
    }
+   /* .ways i{
+    position: fixed;
+    margin-left: 125px;
+   } */
+
    .adult{
     font-family: sans-serif;
     font-weight: 550;
@@ -102,6 +130,7 @@
 
     width: 50px;
     height: 50px;
+    margin-left: 10px;
    }
    .book{
     font-family: sans-serif;
@@ -161,7 +190,7 @@
     font-weight: 600;
 
    }
-   button{
+   .button{
     width: 100%;
     padding: 15px;
     background-color: #00baf2;
@@ -172,6 +201,7 @@
     font-size: 18px;
     font-weight: 600;
     font-family: sans-serif;
+    text-align: center;
    }
    .trip{
     margin: 10px;
