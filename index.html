@@ -16,6 +16,7 @@
             var men = document.querySelector("#pepole").value;
             var price = document.querySelector("#price").value;
             var date = document.querySelector("#date").value;
+            var op = document.querySelector("#op12").value;
 
             document.querySelector("#adult").textContent = men  + " Adult Tickets";
             document.querySelector("#men").textContent = men ;
@@ -23,6 +24,7 @@
             document.querySelector("#date1").textContent = date; 
             document.querySelector(".to1").textContent = from;
             document.querySelector(".from1").textContent = to;
+            document.querySelector("#op2").textContent = op;
 
             
             var box = document.querySelector(".tikeets");
@@ -44,7 +46,7 @@
 <body>
     <div class="bookig">
         <div class="textcontent">
-            <h1 align="center">Book Free Tiket</h1>
+            <h1 align="center">Clone By Paytm BRTS Bus</h1>
             <form action="">
                 <label for="">To</label>
                 <input type="text" id="to">
@@ -54,14 +56,17 @@
                 <input type="number" id="pepole">
                 <label for="">Price</label>
                 <input type="Number" id="price">
+                <label for="">Next Bus Stop Name</label>
+                <input type="text" id="op12">
                 <label for="">Date</label>
                 <input type="text" id="date" value="11 Nov 2023, 08:38 PM">
                    
             </form>   
             <center>
                 <div class="button" onclick="value()">Submit</div> 
+                <div style="color: rgba(0, 0, 0, 0.74);">Created By :- Om Bharsakle</div>
             </center> 
-             
+              
         </div>
     </div>
     
@@ -128,7 +133,7 @@
             </div>
             <div class="cobs">
                 <div class="op1">CHANGE OVER BUS STOP</div>
-                <div class="op2">Jai Jogani Mata Chowk Brts</div>
+                <div class="op2" id="op2">Jai Jogani Mata Chowk Brts</div>
             </div>
             <div class="hl"><hr style="border: 1px dashed #d1d0d0;"></div>
             <div class="cobs">
@@ -138,8 +143,6 @@
         </div>
     </div>
 </div>
-
     <script src="java.js"></script>
-    
 </body>
 </html>
