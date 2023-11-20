@@ -7,7 +7,7 @@
     font-family: sans-serif;
    } 
    .tikeets{
-    display: none;
+    display: block;
    }
    .bookig{
     display: block;
@@ -21,9 +21,10 @@
    }
    form input{
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     outline: none;
     border: 1px solid #ccc;
+    margin-bottom: 4px;
    }
    .textcontent{
     margin: 20px;
@@ -31,6 +32,9 @@
    .textcontent .button{
     width: 90%;
     margin: 10px;
+   }
+   label{
+    font-weight: 600;
    }
    i{
     font-size: 20px;
@@ -87,6 +91,17 @@
     text-align: center;
     gap: 10px;
    }
+   /* .from1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
+   .to1{
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   } */
    .adult{
     font-family: sans-serif;
     font-weight: 550;
@@ -148,7 +163,9 @@
    }
    .timer1{
     display: flex;
-    gap: 20px; 
+    gap: 20px;
+    
+    
    }
    .line{
     line-height: 40px;
@@ -198,7 +215,7 @@
     margin: 10px;
     padding: 20px;
     width: 95%;
-    height: 300px;
+    height: 250px;
     border: 2px solid #cccccc86;
     border-radius: 8px;
     display: flex;
