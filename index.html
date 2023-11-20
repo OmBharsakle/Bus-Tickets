@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paytm</title>
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
@@ -44,32 +44,37 @@
     </script>
 </head>
 <body>
+    
+<!-- START INPUT BY USER  -->
+
     <div class="bookig">
         <div class="textcontent">
-            <h1 align="center">Paytm BRTS Bus</h1>
+            <h1 align="center">Free Book Tiket BRTS</h1>
             <form action="">
-                <label for="">To</label>
-                <input type="text" id="to">
                 <label for="">From</label>
+                <input type="text" id="to">
+                <label for="">To</label>
                 <input type="text" id="from">
                 <label for="">Pepole</label>
                 <input type="number" id="pepole">
                 <label for="">Price</label>
                 <input type="Number" id="price">
-                <label for="">Next Bus Stop Name</label>
-                <input type="text" id="op12">
+                <!-- <label for="">Next Bus Stop Name</label>
+                <input type="text" id="op12"> -->
                 <label for="">Date</label>
                 <input type="text" id="date" value="11 Nov 2023, 08:38 PM">
-                   
             </form>   
             <center>
                 <div class="button" onclick="value()">Submit</div> 
                 <div style="color: rgba(0, 0, 0, 0.74);">Created By :- Om Bharsakle</div>
-            </center> 
-              
+            </center>  
         </div>
     </div>
-    
+   
+<!-- END INPUT BY USER  -->
+
+<!-- START GENERATE BY TIKET USER INPUT DETAILES -->
+
 <div class="tikeets">
     <div id="main_content1">
         <div class="main">
@@ -131,10 +136,10 @@
                 <div class="op1">OPERATOR</div>
                 <div class="op2">Surat Sitilink</div>
             </div>
-            <div class="cobs">
+            <!-- <div class="cobs">
                 <div class="op1">CHANGE OVER BUS STOP</div>
                 <div class="op2" id="op2">Jai Jogani Mata Chowk Brts</div>
-            </div>
+            </div> -->
             <div class="hl"><hr style="border: 1px dashed #d1d0d0;"></div>
             <div class="cobs">
                 <div class="op3">Order ID: 22385674379</div>
@@ -143,6 +148,9 @@
         </div>
     </div>
 </div>
+
+<!-- END GENERATE BY TIKET USER INPUT DETAILES -->
+
     <script src="java.js"></script>
 </body>
 </html>
