@@ -15,13 +15,13 @@
             var from = document.querySelector("#from").value;
             var men = document.querySelector("#pepole").value;
             var price = document.querySelector("#price").value;
-            var date = document.querySelector("#date").value;
+            // var date = document.querySelector("#date").value;
             // var op = document.querySelector("#op12").value;
 
             document.querySelector("#adult").textContent = men  + " Adult Tickets";
             document.querySelector("#men").textContent = men ;
             document.querySelector("#price1").textContent = "₹" + price; 
-            document.querySelector("#date1").textContent = date; 
+            // document.querySelector("#date1").textContent = date; 
             document.querySelector(".to1").textContent = from;
             document.querySelector(".from1").textContent = to;
             // document.querySelector("#op2").textContent = op;
@@ -99,7 +99,7 @@
                 <img class="paid1" src="Material/paid.png" alt="">
             </div>
             <div class="book">TICKET BOOKED SUCCESSFULLY</div>
-            <div class="time" id="date1">11 Nov 2023, 08:38 PM</div>
+            <div class="time" id="dateTime"></div>
             <div class="line"></div>
             <div class="timer">
                 <div class="valid">
@@ -150,6 +150,37 @@
 </div>
 
 <!-- END GENERATE BY TIKET USER INPUT DETAILES -->
+    <script>
+    // Function to update date and time
+    function updateDateTime() {
+      const currentDate = new Date();
+      const monthsOfYear = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      
+      const month = monthsOfYear[currentDate.getMonth()];
+      const date = currentDate.getDate();
+      const year = currentDate.getFullYear();
+      let hours = currentDate.getHours();
+      const minutes = currentDate.getMinutes();
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+
+      // Convert hours to 12-hour format
+      if (hours > 12) {
+        hours -= 12;
+      } else if (hours === 0) {
+        hours = 12;
+      }
+
+      const formattedDateTime = `${date} ${month} ${year}, ${hours}:${minutes < 10 ? '0' : ''}${minutes} ${ampm}`;
+
+      document.getElementById("dateTime").innerHTML = formattedDateTime;
+    }
+
+    // Update date and time every second
+    setInterval(updateDateTime, 1000);
+
+    // Call the function to display immediately
+    updateDateTime();
+  </script>
 
     <script src="java.js"></script>
 </body>
