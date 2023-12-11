@@ -151,35 +151,26 @@
 
 <!-- END GENERATE BY TIKET USER INPUT DETAILES -->
     <script>
-    // Function to update date and time
-    function updateDateTime() {
-      const currentDate = new Date();
-      const monthsOfYear = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      
-      const month = monthsOfYear[currentDate.getMonth()];
-      const date = currentDate.getDate();
-      const year = currentDate.getFullYear();
-      let hours = currentDate.getHours();
-      const minutes = currentDate.getMinutes();
-      const ampm = hours >= 12 ? 'PM' : 'AM';
+const currentDate = new Date();
+        const monthsOfYear = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        
+        const month = monthsOfYear[currentDate.getMonth()];
+        const date = currentDate.getDate();
+        const year = currentDate.getFullYear();
+        let hours = currentDate.getHours();
+        const minutes = currentDate.getMinutes();
+        const ampm = hours >= 12 ? 'PM' : 'AM';
 
-      // Convert hours to 12-hour format
-      if (hours > 12) {
-        hours -= 12;
-      } else if (hours === 0) {
-        hours = 12;
-      }
+        // Convert hours to 12-hour format
+        if (hours > 12) {
+            hours -= 12;
+        } else if (hours === 0) {
+            hours = 12;
+        }
 
-      const formattedDateTime = `${date} ${month} ${year}, ${hours}:${minutes < 10 ? '0' : ''}${minutes} ${ampm}`;
+        const formattedDateTime = `${date} ${month} ${year}, ${hours}:${minutes < 10 ? '0' : ''}${minutes} ${ampm}`;
 
-      document.getElementById("dateTime").innerHTML = formattedDateTime;
-    }
-
-    // Update date and time every second
-    setInterval(updateDateTime, 1000);
-
-    // Call the function to display immediately
-    updateDateTime();
+        document.getElementById("dateTime").innerHTML = formattedDateTime;
   </script>
 
     <script src="java.js"></script>
