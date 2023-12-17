@@ -231,4 +231,20 @@
     font-size: 11px;
     line-height: 17px;
    }
+    ul {
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  .list {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+  }
+  .list-items {
+    padding: 10px 5px;
+  }
+  .list-items:hover {
+    background-color: #dddddd;
+  }
 }
