@@ -247,4 +247,21 @@
   .list-items:hover {
     background-color: #dddddd;
   }
+  .notice{
+    margin-top: 20px;
+    
+  }
+  .hindi{
+    margin-top: 10px;
+    font-size: 20px;
+    color: red;
+  }
+  .down{
+    width: 300px;
+    margin-top: 10px;
+  }
+  .down1{
+    width: 300px;
+    margin-top: 10px;
+  }
 }
